@@ -156,7 +156,7 @@ class tlRestApi
 
 
     // $this->app->get('/testplans/:id', array($this,'getTestPlan'));
-    $this->apiLogPathName = '/var/testlink/rest-api.log';
+    $this->apiLogPathName = dirname(__FILE__) . '/testlink/rest-api.log';
 
     $this->db = new database(DB_TYPE);
     $this->db->db->SetFetchMode(ADODB_FETCH_ASSOC);
